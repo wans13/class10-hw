@@ -6,6 +6,7 @@ fruits.unshift("kiwi");
 //2
 console.log(fruits[0]);
 console.log(fruits[fruits.length - 1]);
+console.log("------------------------------------");
 
 //3
 const selectedFruits = fruits.slice(1, 4);
