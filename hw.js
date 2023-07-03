@@ -43,11 +43,16 @@ const emailParts = email.split("@");
 //9
 const temperatures = [72, 85, 90, 65, 75, 88];
 let highestTemperature = 0;
-for (let i = 0; i < temperatures.length; i++) {
-  if (temperatures[i] > highestTemperature) {
-    highestTemperature = temperatures[i];
+// for (let i = 0; i < temperatures.length; i++) {
+//   if (temperatures[i] > highestTemperature) {
+//     highestTemperature = temperatures[i];
+//   }
+// }
+temperatures.forEach(function (temperature) {
+  if (temperature > highestTemperature) {
+    highestTemperature = temperature;
   }
-}
+});
 console.log(highestTemperature);
 console.log("------------------------------------");
 
